@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // trois listes pour trois périodes + une pour la nuit
     const morningMessages = [
         "Good Morning",
         "Rise and Shine",
@@ -34,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Midnight Ideas?",
         "Coding in the Dark?",
         "Last-time Debugging?",
+        "Don't Forget to Sleep",
     ];
 
     const hour = new Date().getHours();
