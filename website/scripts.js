@@ -74,4 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeof searchInput.select === 'function') searchInput.select();
         });
     }
+
+    const githubBtn = document.getElementById('github-btn');
+    if (githubBtn) {
+        githubBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = githubBtn.dataset && githubBtn.dataset.url
+                ? githubBtn.dataset.url
+                : 'https://github.com/WyliGr/hl-dashboard-frontpage';
+            window.open(url, '_blank', 'noopener');
+        });
+    }
 });
