@@ -1,9 +1,7 @@
-version: '3.9'
-
 services:
   web:
     image: httpd:2.4
-    container_name: my_static_site
+    container_name: will-dashboard
     ports:
       - "8080:80"
     volumes:
