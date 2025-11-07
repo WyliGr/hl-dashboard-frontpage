@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Will's Dashboard</title>
+    <link rel="icon" type="image/png" href="files/images/favicon.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/585bf3fb88.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: radial-gradient(#0e0e0e 2.5px, transparent 2.5px);
+            background-size: 27px 27px;
+            background-color: #060606;
+            cursor: url('files/ico/arrow.ico'), auto;
+        }
+
+        button,
+        a,
+        .card {
+            cursor: url('files/ico/hand.ico'), pointer;
+        }
+
+        input[type="search"] {
+            cursor: url('files/ico/nwpen.ico'), text;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="justify-center flex-col items-center flex min-h-screen text-white Figtree-font px-4 sm:px-6 lg:px-50 xl:px-160">
+    
+    <div class="title font-semibold text-2xl">
+        <h3>Bookmarks</h3>
+    </div>
+    <div class="bookmarks mt-4 flex flex-wrap gap-4 row-5 justify-center">
+        <button class="border border-gray-200 rounded-md px-4 py-3">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="flex flex-col items-start gap-1 text-slate-200 hover:underline">
+                <div class="flex items-center gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/webp/immich.webp" alt="Bookmark" class="w-5 h-5 inline-block" />
+                    <span class="font-medium">Immich</span>
+                </div>
+                <span class="text-sm text-slate-400">Pictures and videos backup solution</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-3">
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="flex flex-col items-start gap-1 text-slate-200 hover:underline">
+                <div class="flex items-center gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/webp/nextcloud.webp" alt="Bookmark" class="w-5 h-5 inline-block" />
+                    <span class="font-medium">Nextcloud</span>
+                </div>
+                <span class="text-sm text-slate-400">File sharing and collaboration platform</span>
+            </a>
+        </button>
+    </div>
+</body>
+</html>
