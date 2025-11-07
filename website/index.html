@@ -19,13 +19,14 @@
             background-image: radial-gradient(#0e0e0e 2.5px, transparent 2.5px);
             background-size: 27px 27px;
             background-color: #060606;
+            cursor: url('files/arrow.ico'), auto;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="min-h-screen flex flex-col items-center justify-center p-6">
+    <div class="titlest mt-40 min-h-[60vh] flex flex-col items-center justify-center p-6">
         <button id="github-btn" data-url="https://github.com/WyliGr/hl-dashboard-frontpage"
             class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white shadow hover:bg-black/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2 border border-white-300">
             <span
@@ -44,8 +45,7 @@
             <h1>Hola!</h1>
         </div>
         <div class="relative group mb-8">
-            <p class="text-gray-400 text-center">Control your infrastructure from one place<br>AI search that
-                understands what you're looking for</p>
+            <p class="text-gray-400 text-center">All your self-hosted tools, one place<br>Explore, manage, and search — effortlessly</p>
         </div>
         <form action="https://www.perplexity.ai/search" method="get" target="_blank" rel="noopener"
             class="w-full max-w-xl">
@@ -63,7 +63,69 @@
             </div>
         </form>
     </div>
-    
+    </div>
+    <div class="links flex flex-wrap justify-center gap-6 pb-6 px-4 sm:px-6 lg:px-20 xl:px-32">
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-hard-drive"></i>
+                <span>ZimaOS</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-server"></i>
+                <span>Proxmox</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-photo-film"></i>
+                <span>Immich</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-car-tunnel"></i>
+                <span>Tailscale</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-tv"></i>
+                <span>Jellyfin</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-cloud"></i>
+                <span>Nextcloud</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-home"></i>
+                <span>HASS</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-gauge"></i>
+                <span>Libre Speed</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-signature"></i>
+                <span>DocuSeal</span>
+            </a>
+        </button>
+        <button class="border border-gray-200 rounded-md px-4 py-2">
+            <a href="https://www.perplexity.ai" class="text-slate-200 hover:underline flex items-center gap-3">
+                <i class="fa-solid fa-cube"></i>
+                <span>Crafty</span>
+            </a>
+        </button>
+    </div>
     <script src="scripts.js" defer></script>
 </body>
 
