@@ -85,4 +85,27 @@ document.addEventListener('DOMContentLoaded', () => {
             window.open(url, '_blank', 'noopener');
         });
     }
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.style.cursor = card.style.cursor || 'pointer';
+
+        card.addEventListener('click', (e) => {
+            const url = card.dataset && card.dataset.url;
+            if (url) {
+                window.open(url, '_blank', 'noopener');
+                return;
+            }
+
+            const titleEl = card.querySelector('h3') || card.querySelector('span') || card;
+            const title = titleEl ? (titleEl.textContent || '').trim() : '';
+            if (searchInput) {
+                searchInput.value = title;
+                searchInput.focus();
+                if (typeof searchInput.select === 'function') searchInput.select();
+            }
+
+            card.classList.toggle('opacity-90');
+        });
+    });
 });
