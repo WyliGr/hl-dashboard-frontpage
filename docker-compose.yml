@@ -3,7 +3,7 @@ services:
     image: httpd:2.4
     container_name: will-dashboard
     ports:
-      - "8080:80"
+      - "3030:80"
     volumes:
       - ./website:/usr/local/apache2/htdocs/
     restart: unless-stopped
